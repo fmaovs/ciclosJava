@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class EjmploOperadores {
 
@@ -16,7 +17,7 @@ public class EjmploOperadores {
         //System.out.println(y3);
         //System.out.println(b);
 
-        //1. 
+        /* //1. 
         for( int i = 1; i < 101; i++){
             System.out.println(i);
         }
@@ -99,10 +100,10 @@ public class EjmploOperadores {
 
         //8. ""
         int cuenta = 1;
-        System.out.println((cuenta > 10)? "Cuenta es mayor a 10": "Cuenta es menor a 10");
+        System.out.println((cuenta > 10)? "Cuenta es mayor a 10": "Cuenta es menor a 10"); */
 
         //9. 
-        int totalNotas = 0;
+        /* int totalNotas = 0;
         ArrayList<Integer> notas = new ArrayList<Integer>();
         notas.add(3);
         notas.add(1);
@@ -119,8 +120,20 @@ public class EjmploOperadores {
         for(int nota: notas  ){
             totalNotas += nota;
         }
-        System.out.println("El promedio de notas es " + totalNotas/10 );
+        System.out.println("El promedio de notas es " + totalNotas/10 ); */
         
+        int totalNotas = 0;
+        ArrayList<Integer> notas = new ArrayList<Integer>();
+        Random random = new Random();
+        
+        for(int i = 0 ; i < 10 ; i++){
+            notas.add(random.nextInt(5)+1);
+            totalNotas += notas.get(i);
+            //System.out.println(notas);
+            //System.out.println(totalNotas);
+        }
+        System.out.println("El promedio de notas es " + totalNotas/10);
+
     }   
 
 
