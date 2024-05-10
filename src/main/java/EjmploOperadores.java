@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class EjmploOperadores {
 
     public static void main(String[] args) {
@@ -78,7 +80,49 @@ public class EjmploOperadores {
             System.out.println(j6);
             j6 -= 11;
         }
+
+        //7 "acumulador"
+        int j7 = 0, acumulador=0;
+        while (j7 <=10) {
+            System.out.println(acumulador);
+            acumulador+=  j7;
+            j7++;
+        }
+        System.out.println("Resultado con while: " + acumulador );
+
+        int total = 0;
+        for(int i7 = 0; i7<=10;i7++){
+            total += i7;
+            System.out.println(i7);
+        }
+        System.out.println("El total es: " + total);
+
+        //8. ""
+        int cuenta = 1;
+        System.out.println((cuenta > 10)? "Cuenta es mayor a 10": "Cuenta es menor a 10");
+
+        //9. 
+        int totalNotas = 0;
+        ArrayList<Integer> notas = new ArrayList<Integer>();
+        notas.add(3);
+        notas.add(1);
+        notas.add(2);
+        notas.add(1);
+        notas.add(5);
+        notas.add(4);
+        notas.add(3);
+        notas.add(4);
+        notas.add(5);
+        notas.add(1);
+        
+
+        for(int nota: notas  ){
+            totalNotas += nota;
+        }
+        System.out.println("El promedio de notas es " + totalNotas/10 );
+        
     }   
+
 
 
 
